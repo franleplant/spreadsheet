@@ -31,8 +31,6 @@ export class Spreadsheet {
   }
 
   setCell(id: CellId, data: CellData): void {
-    // TODO everytime we set, recalculate formulas
-
     if (typeof data === "number") {
       this.cells[id] = {
         type: "number",
